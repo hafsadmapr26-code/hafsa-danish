@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Bag Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="logo">
+        The <span>Bag</span> Store
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="cart">
+        🛍️ <span id="cart-count">0</span>
+    </div>
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">WELCOME TO THE BAG STORE</p>
+
+        <h1>
+            Carry Your Style
+            <span>With Elegance</span>
+        </h1>
+
+        <p>
+            Discover beautiful handbags, stylish totes and trendy
+            accessories designed to make every outfit special.
+        </p>
+
+        <a href="#products" class="shop-btn">
+            Shop Collection
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <div class="about-image">
+        <img
+        src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80"
+        alt="Beautiful handbag">
+    </div>
+
+    <div class="about-content">
+
+        <p class="small-title">ABOUT US</p>
+
+        <h2>
+            Fashion That
+            <span>Fits You</span>
+        </h2>
+
+        <p>
+            Welcome to <b>The Bag Store</b>, your destination for
+            stylish and elegant bags. We believe that the perfect
+            bag is more than just an accessory — it is a reflection
+            of your personality.
+        </p>
+
+        <p>
+            Our collection includes beautiful handbags, shoulder
+            bags, tote bags and backpacks suitable for everyday
+            use, parties and special occasions.
+        </p>
+
+        <div class="features">
+
+            <div>
+                <span>✦</span>
+                <h3>Premium Quality</h3>
+                <p>Beautiful and reliable products.</p>
+            </div>
+
+            <div>
+                <span>♡</span>
+                <h3>Elegant Designs</h3>
+                <p>Styles for every personality.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products" class="products">
+
+    <p class="small-title">OUR COLLECTION</p>
+
+    <h2>
+        Shop Our
+        <span>Beautiful Bags</span>
+    </h2>
+
+    <p class="section-description">
+        Find your perfect bag from our exclusive collection.
+    </p>
+
+
+    <!-- Categories -->
+
+    <div class="categories">
+
+        <button class="active">All</button>
+        <button>Handbags</button>
+        <button>Shoulder Bags</button>
+        <button>Tote Bags</button>
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div class="product-container">
+
+
+        <!-- Product 1 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <span class="sale">NEW</span>
+
+                <img
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                alt="Pink Handbag">
+            </div>
+
+            <div class="product-info">
+
+                <p class="category">HANDBAG</p>
+
+                <h3>Elegant Pink Handbag</h3>
+
+                <p class="stars">★★★★★</p>
+
+                <h4>Rs. 4,999</h4>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 2 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=700&q=80"
+                alt="Green Bag">
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="category">SHOULDER BAG</p>
+
+                <h3>Classic Green Bag</h3>
+
+                <p class="stars">★★★★★</p>
+
+                <h4>Rs. 5,499</h4>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 3 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="sale">POPULAR</span>
+
+                <img
+                src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=700&q=80"
+                alt="Luxury Bag">
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="category">LUXURY BAG</p>
+
+                <h3>Luxury Fashion Bag</h3>
+
+                <p class="stars">★★★★★</p>
+
+                <h4>Rs. 6,999</h4>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 4 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                alt="Tote Bag">
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="category">TOTE BAG</p>
+
+                <h3>Everyday Tote Bag</h3>
+
+                <p class="stars">★★★★★</p>
+
+                <h4>Rs. 3,999</h4>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 5 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"
+                alt="Brown Handbag">
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="category">HANDBAG</p>
+
+                <h3>Classic Brown Handbag</h3>
+
+                <p class="stars">★★★★★</p>
+
+                <h4>Rs. 4,499</h4>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 6 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="sale">SALE</span>
+
+                <img
+                src="https://images.unsplash.com/photo-1585488433567-7d37b1a7b8a4?auto=format&fit=crop&w=700&q=80"
+                alt="Fashion Bag">
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="category">FASHION BAG</p>
+
+                <h3>Pretty Mini Bag</h3>
+
+                <p class="stars">★★★★★</p>
+
+                <h4>Rs. 2,999</h4>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="contact-heading">
+
+        <p class="small-title">GET IN TOUCH</p>
+
+        <h2>
+            We'd Love To
+            <span>Hear From You</span>
+        </h2>
+
+        <p>
+            Have a question about our products?
+            Send us a message and our team will get back to you.
+        </p>
+
+    </div>
+
+
+    <form>
+
+        <div class="form-row">
+
+            <input
+            type="text"
+            placeholder="Your Name"
+            required>
+
+            <input
+            type="email"
+            placeholder="Your Email"
+            required>
+
+        </div>
+
+        <input
+        type="text"
+        placeholder="Subject">
+
+        <textarea
+        rows="6"
+        placeholder="Write your message..."
+        required></textarea>
+
+        <button type="submit">
+            Send Message ✈
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        The <span>Bag</span> Store
+    </div>
+
+    <p>
+        Style • Elegance • Confidence
+    </p>
+
+    <div class="social">
+
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 The Bag Store. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+let cartCount = 0;
+
+function addToCart() {
+
+    cartCount++;
+
+    document.getElementById("cart-count").innerText = cartCount;
+
+    alert("Your bag has been added to the cart! 🛍️");
+
+}
+
+</script>
+
+</body>
+</html>
+```
